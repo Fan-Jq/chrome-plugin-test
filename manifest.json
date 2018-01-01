@@ -1,0 +1,20 @@
+﻿{
+    "manifest_version":2,
+    "version":"1.0",
+    "name":"test",
+    "description":"test",
+    "icons":{
+        "16":"images/icon16.png"
+    },
+    "content_scripts":[
+        {
+         "matches":["https://www.youkaoshi.cn/*"],
+         "js":["js/content_script.js"],
+		  "run_at":"document_end"
+         }
+    ],
+	"background":{
+    //"page":"background.html",
+    "scripts":["js/background.js"]
+}
+}
